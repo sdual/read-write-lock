@@ -30,7 +30,7 @@ public final class ReadWriteLock {
     } finally {
       waitingWriters--;
     }
-    writingWriters--;
+    writingWriters++;
   }
 
   public synchronized void writeUnlock() {
